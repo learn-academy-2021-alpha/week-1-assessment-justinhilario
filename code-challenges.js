@@ -141,11 +141,11 @@ var utensils = ["fork", "knife", "tongs", "chopsticks", "skewer"]
 var vessels = ["cup", "mug", "stemware", "glass", "tumbler", "tea cup"]
 
 const mostCharacters = (theArray) => {
-    let  result = " ";
-    for (let i=0; i < theArray.length; i++){
-        let currentItem = theArray[i];
-        if (currentItem.length > result.length){
-            result = theArray[i];
+    let  result = " "; // take placeholder for new string (b)
+    for (let i=0; i < theArray.length; i++){ // iterate over length of array
+        let currentItem = theArray[i]; // current item = the values of the array with conditions i approved
+        if (currentItem.length > result.length){ // so if theArray[i] (a) is greater than the length of the result (b) then array[i] (a) replaces the the value result.lenght (b)
+            result = theArray[i]; // now result = a
         }
     }
     return result;
